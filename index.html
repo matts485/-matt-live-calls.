@@ -4,44 +4,227 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Private Fan Experience</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.6}
-header{background:#111;border-bottom:1px solid #292929;padding:18px 5%}
-.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:20px;font-weight:bold;color:#fff;text-decoration:none}
-nav{display:flex;gap:22px;flex-wrap:wrap}
-nav a{color:#bbb;text-decoration:none;font-size:14px}
-nav a:hover{color:#fff}
-.hero{text-align:center;padding:100px 20px 90px;background:linear-gradient(180deg,#151515,#080808)}
-.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.1;margin-bottom:22px}
-.hero p{max-width:650px;margin:0 auto 30px;color:#bbb;font-size:18px}
-.button{display:inline-block;background:#fff;color:#000;text-decoration:none;padding:15px 28px;border-radius:8px;font-weight:bold}
-.disclosure{margin-top:20px;font-size:13px;color:#888}
-section{max-width:1100px;margin:auto;padding:70px 20px}
-h2{text-align:center;font-size:34px;margin-bottom:40px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#131313;border:1px solid #292929;border-radius:14px;padding:30px;text-align:center}
-.card h3{margin-bottom:12px}
-.card p{color:#aaa}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.step{padding:25px;background:#101010;border-radius:12px;border:1px solid #242424}
-.step strong{display:block;font-size:28px;margin-bottom:10px}
-.step p{color:#aaa}
-footer{text-align:center;padding:30px 20px;border-top:1px solid #222;color:#777;font-size:13px}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#080808;
+  color:#fff;
+  line-height:1.6;
+}
+
+header{
+  background:#111;
+  border-bottom:1px solid #292929;
+  padding:18px 5%;
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:#bbb;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#fff;
+}
+
+.hero{
+  min-height:700px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+  padding:90px 20px;
+}
+
+.hero-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  opacity:.48;
+  filter:brightness(.7);
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,.25),
+    rgba(0,0,0,.85)
+  );
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+}
+
+.hero h1{
+  font-size:clamp(40px,7vw,70px);
+  line-height:1.08;
+  margin-bottom:22px;
+}
+
+.hero p{
+  max-width:650px;
+  margin:0 auto 30px;
+  color:#ddd;
+  font-size:18px;
+}
+
+.button{
+  display:inline-block;
+  background:#fff;
+  color:#000;
+  text-decoration:none;
+  padding:16px 30px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.disclosure{
+  margin-top:20px;
+  color:#bbb;
+  font-size:13px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 20px;
+}
+
+h2{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#131313;
+  border:1px solid #292929;
+  border-radius:14px;
+  padding:30px;
+  text-align:center;
+}
+
+.card h3{
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#aaa;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step{
+  padding:28px;
+  background:#101010;
+  border-radius:12px;
+  border:1px solid #242424;
+}
+
+.step strong{
+  display:block;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.step p{
+  color:#aaa;
+}
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  border-top:1px solid #222;
+  color:#777;
+  font-size:13px;
+}
+
 @media(max-width:700px){
-.nav{flex-direction:column;gap:15px}
-nav{justify-content:center;gap:15px}
-.cards,.steps{grid-template-columns:1fr}
-.hero{padding-top:70px}
+
+  .nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav{
+    justify-content:center;
+    gap:15px;
+  }
+
+  .hero{
+    min-height:650px;
+  }
+
+  .cards,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="nav">
-<a class="logo" href="index.html">Private Fan Experience</a>
+
+<a class="logo" href="index.html">
+Private Fan Experience
+</a>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="book.html">Book</a>
@@ -49,57 +232,108 @@ nav{justify-content:center;gap:15px}
 <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
 </nav>
+
 </div>
 </header>
 
 <main>
-<div class="hero">
-<h1>Your Fan Moment.<br>Your Conversation.</h1>
-<p>Enjoy a private and personalized live entertainment experience designed to make your fan moment memorable.</p>
-<a class="button" href="book.html">Request a Fan Call</a>
+
+<section class="hero">
+
+<img
+class="hero-image"
+src="IMG_2491.jpeg"
+alt="Featured fan experience photo"
+>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+Your Fan Moment.<br>
+Your Conversation.
+</h1>
+
+<p>
+Enjoy a private and personalized live entertainment experience designed to make your fan moment memorable.
+</p>
+
+<a class="button" href="book.html">
+Request a Fan Call
+</a>
+
 <div class="disclosure">
-Fan calls are live entertainment experiences with a performer. Booking requests are reviewed before a call is confirmed.
-</div>
+Fan calls are live entertainment experiences with a performer.
+Booking requests are reviewed before a call is confirmed.
 </div>
 
-<section>
-<h2>What You Can Expect</h2>
-<div class="cards">
-<div class="card">
-<h3>Private</h3>
-<p>A personal conversation arranged specifically for your requested fan experience.</p>
-</div>
-<div class="card">
-<h3>Personal</h3>
-<p>Enjoy friendly conversation and interactive moments with a live performer.</p>
-</div>
-<div class="card">
-<h3>Memorable</h3>
-<p>Create a fun fan moment that you can look back on and remember.</p>
-</div>
 </div>
 </section>
 
 <section>
+
+<h2>What You Can Expect</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Private</h3>
+<p>
+A personal conversation arranged specifically for your requested fan experience.
+</p>
+</div>
+
+<div class="card">
+<h3>Personal</h3>
+<p>
+Enjoy friendly conversation and interactive moments with a live performer.
+</p>
+</div>
+
+<div class="card">
+<h3>Memorable</h3>
+<p>
+Create a fun fan moment that you can look back on and remember.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+
 <h2>How It Works</h2>
+
 <div class="steps">
+
 <div class="step">
 <strong>01</strong>
 <h3>Request</h3>
-<p>Submit your fan-call request through the booking form.</p>
+<p>
+Submit your fan-call request through the booking form.
+</p>
 </div>
+
 <div class="step">
 <strong>02</strong>
 <h3>Review</h3>
-<p>Your request is reviewed and availability is checked.</p>
+<p>
+Your request is reviewed and availability is checked.
+</p>
 </div>
+
 <div class="step">
 <strong>03</strong>
 <h3>Connect</h3>
-<p>Once confirmed, you'll receive the details for your live entertainment experience.</p>
+<p>
+Once confirmed, you'll receive the details for your live entertainment experience.
+</p>
 </div>
+
 </div>
 </section>
+
 </main>
 
 <footer>
@@ -108,4 +342,3 @@ Fan calls are live entertainment experiences with a performer. Booking requests 
 
 </body>
 </html>
-
