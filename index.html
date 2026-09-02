@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entertainment Calls</title>
+  <title>Private Fan Experience</title>
 
   <style>
     * {
@@ -13,126 +13,132 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: white;
+      background: #111;
+      color: #fff;
     }
 
     header {
-      padding: 70px 20px;
+      padding: 20px;
       text-align: center;
-      background: linear-gradient(135deg, #6a00ff, #ff006a);
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      font-size: 42px;
-      margin: 0 0 15px;
+      margin: 0;
+      font-size: 25px;
     }
 
-    header p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #ccc;
+      line-height: 1.7;
+      font-size: 17px;
     }
 
     .button {
       display: inline-block;
       margin-top: 25px;
-      padding: 15px 30px;
-      background: white;
+      padding: 16px 28px;
+      background: #fff;
       color: #111;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 10px;
       font-weight: bold;
     }
 
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .cards {
-      max-width: 900px;
-      margin: 30px auto;
-      display: grid;
-      gap: 20px;
-    }
-
-    .card {
-      background: #1c1c1c;
-      padding: 30px;
-      border-radius: 18px;
-    }
-
-    .card h2 {
-      margin-top: 0;
+    .notice {
+      margin-top: 25px;
+      padding: 15px;
+      border: 1px solid #444;
+      border-radius: 10px;
+      color: #bbb;
+      font-size: 13px;
+      line-height: 1.6;
     }
 
     footer {
-      padding: 30px;
       text-align: center;
+      padding: 25px;
       color: #888;
+      font-size: 13px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 34px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Entertainment Calls</h1>
-  <p>
-    Enjoy fun, personalized live video experiences with entertaining performers.
-  </p>
+  <header>
+    <h1>Private Fan Experience</h1>
 
-  <a class="button" href="book.html">
-    Book a Call
-  </a>
-</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="book.html">Book</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section class="section">
-  <h2>Choose Your Experience</h2>
+  <section class="hero">
+    <div class="hero-content">
 
-  <div class="cards">
+      <h2>Make Your Fan Moment Personal</h2>
 
-    <div class="card">
-      <h2>🎭 Character Call</h2>
       <p>
-        Meet an entertaining character during a personalized live video call.
+        Enjoy a private, personalized live entertainment experience
+        designed around you. Connect, chat, laugh, and create a memorable
+        fan moment.
       </p>
 
       <a class="button" href="book.html">
-        Book Now
+        Request a Fan Call
       </a>
+
+      <div class="notice">
+        Private fan calls are live entertainment experiences with a performer
+        and are arranged through a booking request.
+      </div>
+
     </div>
+  </section>
 
-    <div class="card">
-      <h2>😂 Surprise Call</h2>
-      <p>
-        Give yourself or a friend a fun surprise with a live entertainment call.
-      </p>
-
-      <a class="button" href="book.html">
-        Book Now
-      </a>
-    </div>
-
-    <div class="card">
-      <h2>⭐ Fan Call</h2>
-      <p>
-        Enjoy a one-on-one live video experience with a performer.
-      </p>
-
-      <a class="button" href="book.html">
-        Book Now
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Entertainment Calls
-</footer>
+  <footer>
+    © 2026 Private Fan Experience. All rights reserved.
+  </footer>
 
 </body>
 </html>
