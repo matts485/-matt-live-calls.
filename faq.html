@@ -1,144 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ | Private Fan Experience</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0b;
-      color: #fff;
-    }
-
-    header {
-      padding: 22px 20px;
-      text-align: center;
-      border-bottom: 1px solid #292929;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
-    }
-
-    .container {
-      max-width: 750px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 35px;
-    }
-
-    .faq {
-      background: #181818;
-      border: 1px solid #292929;
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 15px;
-    }
-
-    .faq h3 {
-      margin-top: 0;
-      font-size: 18px;
-    }
-
-    .faq p {
-      color: #aaa;
-      line-height: 1.7;
-      margin-bottom: 0;
-    }
-
-    footer {
-      border-top: 1px solid #292929;
-      text-align: center;
-      padding: 25px;
-      color: #777;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequently Asked Questions</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.6}
+header{background:#111;border-bottom:1px solid #292929;padding:18px 5%}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:bold;color:#fff;text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#bbb;text-decoration:none;font-size:14px}
+nav a:hover{color:#fff}
+.container{max-width:850px;margin:auto;padding:90px 20px}
+h1{text-align:center;font-size:48px;margin-bottom:45px}
+.faq{background:#131313;border:1px solid #292929;border-radius:14px;padding:25px;margin-bottom:15px}
+.faq h2{font-size:19px;margin-bottom:10px}
+.faq p{color:#aaa}
+.button-area{text-align:center;margin-top:35px}
+.button{display:inline-block;background:#fff;color:#000;text-decoration:none;padding:15px 28px;border-radius:8px;font-weight:bold}
+footer{text-align:center;padding:30px 20px;border-top:1px solid #222;color:#777;font-size:13px}
+@media(max-width:700px){
+.nav{flex-direction:column;gap:15px}
+nav{justify-content:center;gap:15px}
+h1{font-size:38px}
+}
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>Private Fan Experience</h1>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="book.html">Book</a>
-    <a href="about.html">About</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="nav">
+<a class="logo" href="index.html">Private Fan Experience</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="book.html">Book</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
 
-<div class="container">
+<main class="container">
+<h1>Frequently Asked Questions</h1>
 
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq">
-    <h3>How do I request a call?</h3>
-    <p>
-      Use the Book page and submit the booking form with your preferred details.
-    </p>
-  </div>
-
-  <div class="faq">
-    <h3>Are the calls live?</h3>
-    <p>
-      Yes. Confirmed bookings are live entertainment conversations with a performer.
-    </p>
-  </div>
-
-  <div class="faq">
-    <h3>Is my booking automatically confirmed?</h3>
-    <p>
-      No. Booking requests are reviewed first. A call is confirmed only after
-      availability and details have been reviewed.
-    </p>
-  </div>
-
-  <div class="faq">
-    <h3>How long is a call?</h3>
-    <p>
-      Call duration depends on the booking arrangement and will be provided
-      when your booking is confirmed.
-    </p>
-  </div>
-
-  <div class="faq">
-    <h3>How can I ask a question before booking?</h3>
-    <p>
-      Visit the Contact page to send an email.
-    </p>
-  </div>
-
+<div class="faq">
+<h2>How do I request a call?</h2>
+<p>Go to the Book page and submit the entertainment call request form.</p>
 </div>
 
+<div class="faq">
+<h2>Are the calls live?</h2>
+<p>Yes. The experience is arranged as a live conversation with a performer.</p>
+</div>
+
+<div class="faq">
+<h2>Is my booking automatically confirmed?</h2>
+<p>No. Requests are reviewed first. Availability and confirmation details are provided before the call.</p>
+</div>
+
+<div class="faq">
+<h2>How long is a call?</h2>
+<p>Call length depends on the experience and availability. Details can be discussed during the booking process.</p>
+</div>
+
+<div class="faq">
+<h2>How can I ask a question before booking?</h2>
+<p>Visit the Contact page to send an email with your question.</p>
+</div>
+
+<div class="button-area">
+<a class="button" href="book.html">Request a Fan Call</a>
+</div>
+
+</main>
+
 <footer>
-  © 2026 Private Fan Experience. All rights reserved.
+© 2026 Private Fan Experience. All rights reserved.
 </footer>
 
 </body>
