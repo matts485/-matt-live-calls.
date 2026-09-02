@@ -1,123 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Private Fan Experience</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0b;
-      color: #fff;
-    }
-
-    header {
-      padding: 22px 20px;
-      text-align: center;
-      border-bottom: 1px solid #292929;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
-    }
-
-    .container {
-      max-width: 650px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    .card {
-      background: #181818;
-      border: 1px solid #292929;
-      border-radius: 16px;
-      padding: 35px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 36px;
-      margin-top: 0;
-    }
-
-    p {
-      color: #ccc;
-      line-height: 1.8;
-    }
-
-    .email {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 15px 24px;
-      background: #fff;
-      color: #111;
-      border-radius: 9px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      border-top: 1px solid #292929;
-      text-align: center;
-      padding: 25px;
-      color: #777;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.6}
+header{background:#111;border-bottom:1px solid #292929;padding:18px 5%}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:bold;color:#fff;text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#bbb;text-decoration:none;font-size:14px}
+nav a:hover{color:#fff}
+.container{max-width:750px;margin:auto;padding:90px 20px;text-align:center}
+h1{font-size:48px;margin-bottom:20px}
+.intro{color:#aaa;font-size:18px;margin-bottom:40px}
+.box{background:#131313;border:1px solid #292929;border-radius:16px;padding:40px}
+.box p{color:#aaa;margin-bottom:25px}
+.email{display:inline-block;background:#fff;color:#000;text-decoration:none;padding:15px 28px;border-radius:8px;font-weight:bold;word-break:break-word}
+.small{margin-top:25px;color:#777;font-size:13px}
+footer{text-align:center;padding:30px 20px;border-top:1px solid #222;color:#777;font-size:13px}
+@media(max-width:700px){
+.nav{flex-direction:column;gap:15px}
+nav{justify-content:center;gap:15px}
+h1{font-size:38px}
+}
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>Private Fan Experience</h1>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="book.html">Book</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="nav">
+<a class="logo" href="index.html">Private Fan Experience</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="book.html">Book</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
 
-<div class="container">
+<main class="container">
+<h1>Contact Us</h1>
 
-  <div class="card">
+<p class="intro">
+Have a question about booking or the fan experience? Send us an email and we'll get back to you.
+</p>
 
-    <h2>Contact Us</h2>
+<div class="box">
+<p>For booking questions, availability, or general information:</p>
 
-    <p>
-      Have a question about booking or the fan experience?
-      Send us an email and we'll get back to you.
-    </p>
+<a class="email" href="mailto:kkentucky441@gmail.com">
+kkentucky441@gmail.com
+</a>
 
-    <a class="email" href="mailto:kkentucky441@gmail.com">
-      Contact by Email
-    </a>
-
-  </div>
-
+<p class="small">
+Please include your question and any relevant booking information in your email.
+</p>
 </div>
+</main>
 
 <footer>
-  © 2026 Private Fan Experience. All rights reserved.
+© 2026 Private Fan Experience. All rights reserved.
 </footer>
 
 </body>
