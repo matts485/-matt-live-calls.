@@ -4,17 +4,252 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Private Fan Experience</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+    }
+
+    header {
+      padding: 22px 20px;
+      text-align: center;
+      border-bottom: 1px solid #292929;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(180deg, #1a1a1a, #0b0b0b);
+    }
+
+    .hero-content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-size: 46px;
+      line-height: 1.1;
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 16px 30px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .section {
+      max-width: 950px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #181818;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      padding: 28px 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .notice {
+      max-width: 700px;
+      margin: 30px auto 0;
+      padding: 18px;
+      border: 1px solid #333;
+      border-radius: 12px;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    footer {
+      border-top: 1px solid #292929;
+      text-align: center;
+      padding: 25px 20px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 65px 20px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<header>
   <h1>Private Fan Experience</h1>
 
-  <p>
-    Welcome to a private live entertainment experience.
-  </p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="book.html">Book</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <a href="book.html">Request a Fan Call</a>
+<section class="hero">
+  <div class="hero-content">
+
+    <h2>Your Fan Moment. Your Conversation.</h2>
+
+    <p>
+      Enjoy a private and personalized live entertainment experience
+      designed to make your fan moment memorable.
+    </p>
+
+    <a class="button" href="book.html">
+      Request a Fan Call
+    </a>
+
+    <div class="notice">
+      Fan calls are live entertainment experiences with a performer.
+      Booking requests are reviewed before a call is confirmed.
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+
+  <h2>What You Can Expect</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Private</h3>
+      <p>
+        Enjoy a one-on-one conversation in a relaxed private setting.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Personal</h3>
+      <p>
+        Enjoy conversation and interactive moments created around your
+        fan experience.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Memorable</h3>
+      <p>
+        Create a unique entertainment moment you can look back on.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <h2>How It Works</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>1. Request</h3>
+      <p>
+        Submit your preferred booking details through the booking form.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2. Review</h3>
+      <p>
+        Your request is reviewed and availability is confirmed.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3. Connect</h3>
+      <p>
+        Once confirmed, you'll receive the details for your live call.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Private Fan Experience. All rights reserved.
+</footer>
 
 </body>
 </html>
