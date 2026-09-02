@@ -3,27 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Private Fan Experience</title>
+<title>About the Experience</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
-header{padding:22px 15px;text-align:center;border-bottom:1px solid #292929}
-header h1{margin:0;font-size:25px}
-nav{margin-top:15px}
-nav a{color:#ccc;text-decoration:none;margin:0 7px;font-size:14px}
-.container{max-width:750px;margin:auto;padding:60px 20px}
-.card{background:#181818;border:1px solid #292929;border-radius:16px;padding:35px}
-h2{font-size:36px;margin-top:0}
-p{color:#ccc;line-height:1.8}
-.button{display:inline-block;margin-top:15px;padding:15px 25px;background:#fff;color:#111;text-decoration:none;border-radius:9px;font-weight:bold}
-footer{border-top:1px solid #292929;text-align:center;padding:25px;color:#777;font-size:13px}
-@media(max-width:600px){.card{padding:25px}h2{font-size:30px}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff;line-height:1.7}
+header{background:#111;border-bottom:1px solid #292929;padding:18px 5%}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:bold;color:#fff;text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#bbb;text-decoration:none;font-size:14px}
+nav a:hover{color:#fff}
+.container{max-width:850px;margin:auto;padding:90px 20px}
+h1{text-align:center;font-size:48px;margin-bottom:45px}
+.content{background:#131313;border:1px solid #292929;border-radius:16px;padding:40px}
+.content p{color:#aaa;margin-bottom:22px}
+.button{display:inline-block;margin-top:15px;background:#fff;color:#000;text-decoration:none;padding:15px 28px;border-radius:8px;font-weight:bold}
+footer{text-align:center;padding:30px 20px;border-top:1px solid #222;color:#777;font-size:13px}
+@media(max-width:700px){
+.nav{flex-direction:column;gap:15px}
+nav{justify-content:center;gap:15px}
+h1{font-size:38px}
+}
 </style>
 </head>
 <body>
 
 <header>
-<h1>Private Fan Experience</h1>
+<div class="nav">
+<a class="logo" href="index.html">Private Fan Experience</a>
 <nav>
 <a href="index.html">Home</a>
 <a href="book.html">Book</a>
@@ -31,19 +38,32 @@ footer{border-top:1px solid #292929;text-align:center;padding:25px;color:#777;fo
 <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
 </nav>
+</div>
 </header>
 
-<div class="container">
-<div class="card">
-<h2>About the Experience</h2>
-<p>The Private Fan Experience is designed for fans who want a personal and interactive entertainment experience.</p>
-<p>Each booking is arranged as a live conversation with a performer. Calls can include friendly conversation, storytelling, interactive moments, and other entertainment.</p>
-<p>Every booking request is reviewed before a call is confirmed. Availability and call details are provided during the booking process.</p>
+<main class="container">
+<h1>About the Experience</h1>
+
+<div class="content">
+<p>
+The Private Fan Experience is designed for fans who want a personal and interactive entertainment experience.
+</p>
+
+<p>
+Each booking is arranged as a live conversation with a performer. Calls can include friendly conversation, storytelling, interactive moments, and other entertainment.
+</p>
+
+<p>
+Every booking request is reviewed before a call is confirmed. Availability and call details are provided during the booking process.
+</p>
+
 <a class="button" href="book.html">Request a Fan Call</a>
 </div>
-</div>
+</main>
 
-<footer>© 2026 Private Fan Experience. All rights reserved.</footer>
+<footer>
+© 2026 Private Fan Experience. All rights reserved.
+</footer>
 
 </body>
 </html>
